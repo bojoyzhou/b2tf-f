@@ -15,8 +15,8 @@
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <link rel="stylesheet" href="/asserts/css/style.css">
-        <link rel="stylesheet" href="/asserts/css/ueditor.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/ueditor.css">
     </head>
     <body>
         <div class="container-fluid">
@@ -38,63 +38,110 @@
                     </div><!-- /.navbar-collapse -->
                 </div>
             </nav>
-            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <img src="/thirdparty/ueditor/themes/default/images/scale.png" alt="">导入内容
-                    </li>
-                    <li class="list-group-item">
-                        <img src="/thirdparty/ueditor/themes/default/images/scale.png" alt="">常用
-                        <ul class="list-group">
-                            <li class="list-group-item">标题</li>
-                            <li class="list-group-item">正文</li>
-                            <li class="list-group-item">图文</li>
-                            <li class="list-group-item">关注</li>
-                            <li class="list-group-item">分隔符</li>
-                            <li class="list-group-item">插件</li>
-                            <li class="list-group-item">其他</li>
-                        </ul>
-                    </li>
-                    <li class="list-group-item">
-                        <img src="/thirdparty/ueditor/themes/default/images/scale.png" alt="">我的图库
-                    </li>
-                    <li class="list-group-item">
-                        <img src="/thirdparty/ueditor/themes/default/images/scale.png" alt="">我的内容
-                    </li>
-                </ul>
-            </div>
-            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <form action="" method="POST" class="form-horizontal" role="form">
-                    <div class="input-group">
-                        <input type="url" class="form-control" id="import-url" placeholder="要导入的文章URL">
-                        <span class="input-group-btn">
-                            <button type="button" class="btn btn-default">导入</button>
-                        </span>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 menu-left">
+                <div class="list-group">
+                    <a href="#" class="list-group-item item-level-1">
+                        <img src="/assets/images/icon-pages.png" alt="">导入内容
+                    </a>
+                    <div>
+                        <a href="#" class="list-group-item item-level-1 js-list-btn">
+                            <img src="/assets/images/icon-edit.png" alt="">常用
+                            <img class="js-arrow" src="/assets/images/icon-arrow.png" alt="">
+                        </a>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">标题</a>
+                            <a href="#" class="list-group-item">正文</a>
+                            <a href="#" class="list-group-item">图文</a>
+                            <a href="#" class="list-group-item">关注</a>
+                            <a href="#" class="list-group-item">分隔符</a>
+                            <a href="#" class="list-group-item">插件</a>
+                            <a href="#" class="list-group-item">其他</a>
                         </div>
                     </div>
-            </form>
+                    <a href="#" class="list-group-item item-level-1">
+                        <img src="/assets/images/icon-img.png" alt="">我的图库
+                    </a>
+                    <a href="#" class="list-group-item item-level-1">
+                        <img src="/assets/images/icon-doc.png" alt="">我的内容
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 menu-center">
+                <div class="form-horizontal card import-panel">
+                        <div>
+                            <input type="url" class="form-control import-url" id="import-url" placeholder="要导入的文章URL">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <button type="submit" class="btn btn-p">导入</button>
+                            </div>
+                        </div>
+                </div>
                 <div class="list-group">
-                    <a href="#" class="list-group-item active">
-                        <h4 class="list-group-item-heading">List group item heading</h4>
-                        <p class="list-group-item-text">Content goes here</p>
-                    </a>
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">List group item heading</h4>
-                        <p class="list-group-item-text">Content goes here</p>
-                    </a>
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">List group item heading</h4>
-                        <p class="list-group-item-text">Content goes here</p>
-                    </a>
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">List group item heading</h4>
-                        <p class="list-group-item-text">Content goes here</p>
-                    </a>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">备选内容</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item active">
+                                    <h4 class="list-group-item-heading">papi酱——男人的谎言</h4>
+                                    <p class="list-group-item-text">本期视频不针对所有男性，真的！！！</p>
+                                    <div class="list-group-item-footer clearfix">
+                                        <span class="label pull-left">papi</span>
+                                        <span class="label pull-left date">2016-02-01</span>
+                                        <span class="label pull-right">查看原文</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">papi酱——男人的谎言</h4>
+                                    <p class="list-group-item-text">本期视频不针对所有男性，真的！！！</p>
+                                    <div class="list-group-item-footer clearfix">
+                                        <span class="label pull-left">papi</span>
+                                        <span class="label pull-left date">2016-02-01</span>
+                                        <span class="label pull-right">查看原文</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">papi酱——男人的谎言</h4>
+                                    <p class="list-group-item-text">本期视频不针对所有男性，真的！！！</p>
+                                    <div class="list-group-item-footer clearfix">
+                                        <span class="label pull-left">papi</span>
+                                        <span class="label pull-left date">2016-02-01</span>
+                                        <span class="label pull-right">查看原文</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">papi酱——男人的谎言</h4>
+                                    <p class="list-group-item-text">本期视频不针对所有男性，真的！！！</p>
+                                    <div class="list-group-item-footer clearfix">
+                                        <span class="label pull-left">papi</span>
+                                        <span class="label pull-left date">2016-02-01</span>
+                                        <span class="label pull-right">查看原文</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">papi酱——男人的谎言</h4>
+                                    <p class="list-group-item-text">本期视频不针对所有男性，真的！！！</p>
+                                    <div class="list-group-item-footer clearfix">
+                                        <span class="label pull-left">papi</span>
+                                        <span class="label pull-left date">2016-02-01</span>
+                                        <span class="label pull-right">查看原文</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">papi酱——男人的谎言</h4>
+                                    <p class="list-group-item-text">本期视频不针对所有男性，真的！！！</p>
+                                    <div class="list-group-item-footer clearfix">
+                                        <span class="label pull-left">papi</span>
+                                        <span class="label pull-left date">2016-02-01</span>
+                                        <span class="label pull-right">查看原文</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
@@ -113,8 +160,12 @@
         <script type="text/javascript" src="/thirdparty/ueditor/js/ueditor.config.js"></script>
         <script type="text/javascript" src="/thirdparty/ueditor/js/ueditor.all.min.js"></script>
         <script type="text/javascript" src="/thirdparty/ueditor/js/zh-cn.js"></script>
+        <script type="text/javascript" src="/assets/js/index.js"></script>
         <script type="text/javascript">
             var ue = UE.getEditor('editor');
+            index.init({
+                editor: ue
+            });
         </script>
     </body>
 </html>
