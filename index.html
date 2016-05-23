@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="/asserts/css/style.css">
+        <link rel="stylesheet" href="/asserts/css/ueditor.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">logo</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">编辑器</a></li>
+                            <li><a href="#">内容库</a></li>
+                            <li><a href="#">样式中心</a></li>
+                            <li><a href="#">个人中心</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </nav>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <img src="/thirdparty/ueditor/themes/default/images/scale.png" alt="">导入内容
+                    </li>
+                    <li class="list-group-item">
+                        <img src="/thirdparty/ueditor/themes/default/images/scale.png" alt="">常用
+                        <ul class="list-group">
+                            <li class="list-group-item">标题</li>
+                            <li class="list-group-item">正文</li>
+                            <li class="list-group-item">图文</li>
+                            <li class="list-group-item">关注</li>
+                            <li class="list-group-item">分隔符</li>
+                            <li class="list-group-item">插件</li>
+                            <li class="list-group-item">其他</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <img src="/thirdparty/ueditor/themes/default/images/scale.png" alt="">我的图库
+                    </li>
+                    <li class="list-group-item">
+                        <img src="/thirdparty/ueditor/themes/default/images/scale.png" alt="">我的内容
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <form action="" method="POST" class="form-horizontal" role="form">
+                    <div class="input-group">
+                        <input type="url" class="form-control" id="import-url" placeholder="要导入的文章URL">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default">导入</button>
+                        </span>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+            </form>
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">
+                        <h4 class="list-group-item-heading">List group item heading</h4>
+                        <p class="list-group-item-text">Content goes here</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">List group item heading</h4>
+                        <p class="list-group-item-text">Content goes here</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">List group item heading</h4>
+                        <p class="list-group-item-text">Content goes here</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">List group item heading</h4>
+                        <p class="list-group-item-text">Content goes here</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 editor-container">
+                    <script id="editor" type="text/plain"></script>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="//code.jquery.com/jquery.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="Hello World"></script>
+        <script type="text/javascript" src="/thirdparty/ueditor/js/ueditor.config.js"></script>
+        <script type="text/javascript" src="/thirdparty/ueditor/js/ueditor.all.min.js"></script>
+        <script type="text/javascript" src="/thirdparty/ueditor/js/zh-cn.js"></script>
+        <script type="text/javascript">
+            var ue = UE.getEditor('editor');
+        </script>
+    </body>
+</html>
