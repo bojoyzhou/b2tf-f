@@ -1,6 +1,11 @@
-.edui-editor{
-    overflow-x: hidden!important
+div#editor {
+    width: 500px;
+    height: 100%;
+    margin-top: 15px;
 }
+.edui-editor{
+    /* overflow-x: hidden!important
+ */}
 .edui-combox-body, .edui-default .edui-button-body, .edui-menubutton-body, .edui-splitbutton-body, div.edui-box {
     position: relative
 }

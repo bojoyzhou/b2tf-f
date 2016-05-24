@@ -14,20 +14,19 @@ var index = {
     },
     initDom: function() {
         var dom = this.dom;
-        dom.listBtn = $('.menu-left .js-list-btn');
-        dom.arrow = $('.js-arrow');
-        dom.listItem = $('.list-group-item')
+        dom.import = $('#import');
+        dom.importUrl = $('#importUrl');
     },
     bindEvent: function() {
         var dom = this.dom;
-        dom.listBtn.click(function(){
-            $(this).next().slideToggle();
-            dom.arrow.toggleClass('reverse');
-            return false;
+        dom.import.click(function() {
+            var url = dom.importUrl.val();
+            var req = 'http://www.8zcloud.com/api/load-url';
+            $.get(req, {
+                url: url
+            }, function(ret){
+                console.log(ret);
+            }, 'json');
         });
-        dom.listItem.click(function(){
-            dom.listItem.removeClass('active');
-            $(this).addClass('active');
-        })
     }
 };

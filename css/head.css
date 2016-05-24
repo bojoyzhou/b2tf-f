@@ -3,11 +3,15 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    outline:none;
 }
 html, body {
     width: 100%;
     height: 100%;
     background-color: #f2f2f2;
+}
+.hide{
+    display: none;
 }
 nav{
     background-color: #333;
@@ -35,7 +39,7 @@ nav{
     color: #fff;
 }
 .home{
-    background-image: url(/assets/images/nav/home.png);
+    background-image: url(../images/nav/home.png);
     line-height: 60px;
     width: 16px;
     color: #333;
@@ -93,19 +97,19 @@ nav{
     display: none;
 }
 .item-editor .icon, .item-editor .desc i {
-    background-image: url(/assets/images/nav/editor.png);
+    background-image: url(../images/nav/editor.png);
 }
 .item-doc .icon, .item-doc .desc i {
-    background-image: url(/assets/images/nav/doc.png);
+    background-image: url(../images/nav/doc.png);
 }
 .item-style .icon, .item-style .desc i {
-    background-image: url(/assets/images/nav/style.png);
+    background-image: url(../images/nav/style.png);
 }
 .item-data .icon, .item-data .desc i {
-    background-image: url(/assets/images/nav/data.png);
+    background-image: url(../images/nav/data.png);
 }
 .item-user .icon, .item-user .desc i {
-    background-image: url(/assets/images/nav/user.png);
+    background-image: url(../images/nav/user.png);
 }
 .main{
     width: 100%;
@@ -154,19 +158,20 @@ nav{
     padding-right: 8px;
 }
 .main .left .pre-import{
-    background-image: url(/assets/images/menu/icon-import.png);}
+    background-image: url(../images/menu/icon-import.png);}
 .main .left .pre-edit{
-    background-image: url(/assets/images/menu/icon-edit.png);}
+    background-image: url(../images/menu/icon-edit.png);}
 .main .left .pre-img{
-    background-image: url(/assets/images/menu/icon-img.png);}
+    background-image: url(../images/menu/icon-img.png);}
 .main .left .pre-doc{
-    background-image: url(/assets/images/menu/icon-doc.png);}
+    background-image: url(../images/menu/icon-doc.png);}
 .box{
-    box-shadow: rgba(0,0,0,.4) 1px 2px 8px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
 }
 .panel-posts{
     height: 100%;
     overflow-y: auto;
+    font-size: 14px;
 }
 .panel-title{
     background-color: #fff;
@@ -176,3 +181,23 @@ nav{
     color: #fa9b5b;
 }
 .panel-posts-body{}
+
+.btn-primary{
+    margin-top: 22px;
+    font-size: 14px;
+    border: #fa9b5b solid 1px;
+    border-radius: 5px;
+    text-align: center;
+    width: 81px;
+    line-height: 30px;
+    color: #fa9b5b;
+    background-color: #fff;
+}
+.editor {
+    float: left;
+    min-width: 600px;
+    overflow: hidden;
+    height: 100%;
+    margin-left: 15px;
+    box-sizing: border-box;
+}

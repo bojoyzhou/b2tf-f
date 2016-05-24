@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Title Page</title>
-        <link rel="stylesheet" href="/css/common.css">
+        <link rel="stylesheet" href="/css/images.css">
         <!-- <link rel="stylesheet" href="/css/ueditor.css"> -->
     </head>
     <body>
@@ -105,14 +105,57 @@
             <div class="center">
                 <div class="panel-posts box">
                     <div class="panel-title">
-                        常用样式
+                        我的图库
+                        <span>0/30</span>
+                        <button class="btn-primary">添加图片</button>
                     </div>
                     <div class="panel-posts-body">
-
+                        <ul>
+                            <li class="item-img">
+                                <img src="/images/img_default.png" alt="">
+                                <a href="#" class="close">&times;</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="editor"></div>
+        </div>
+        <div class="mask hide">
+            <div class="mask-panel">
+                <div class="mask-title">
+                    <h4>图片上传</h4>
+                </div>
+                <div class="mask-body">
+                    <div class="tabs clear">
+                        <a class="active" href="#">本地上传</a>
+                        <a href="#">网络图片上传</a>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="img_fluid"><img src="/images/img2_default.png" alt=""></div>
+                        <div class="img_fluid"><img src="/images/img2_default.png" alt=""></div>
+                        <div class="img_fluid"><img src="/images/img2_default.png" alt=""></div>
+                        <div class="img_fluid"><img src="/images/img2_default.png" alt=""></div>
+                        <div class="img_fluid"><img src="/images/img2_default.png" alt=""></div>
+                        <div class="img_fluid"><img src="/images/img2_default.png" alt=""></div>
+                        <div class="img_fluid"><img src="/images/img2_default.png" alt=""></div>
+                        <div class="img_fluid"><img src="/images/img2_default.png" alt=""></div>
+                        <div class="img_fluid"><img src="/images/img2_default.png" alt=""></div>
+                        <div class="img_fluid"><img src="/images/img2_default.png" alt=""></div>
+                        <div class="img_fluid"><img src="/images/img2_default.png" alt=""></div>
+                        <div class="img_fluid"><img src="/images/img2_default.png" alt=""></div>
+                        <div class="img_fluid"><img src="/images/img2_default.png" alt=""></div>
+                        <div class="img_fluid add"><img src="/images/img_add.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="mask-footer">
+                    <div class="mask-info"><span class="num-pic">16</span>张图片已经被选中</div>
+                    <div class="mask-btn">
+                        <button class="btn cancel">取消</button>
+                        <button class="btn confirm">确定</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- <script src="/thirdparty/jquery/jquery.min.js"></script>
         <script type="text/javascript" src="/thirdparty/ueditor/js/ueditor.config.js"></script>

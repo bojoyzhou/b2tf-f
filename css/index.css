@@ -1,5 +1,5 @@
 @import url(./head.css);
-@import url(./editor.css);
+@import url(./ueditor.css);
 body{
     /*background-image: url(/assets/images/bg.png);*/
     background-repeat: no-repeat;
@@ -7,17 +7,6 @@ body{
 .author{
     position: absolute;
     left: 0;
-}
-.btn-import{
-    margin-top: 22px;
-    font-size: 14px;
-    border: #fa9b5b solid 1px;
-    border-radius: 5px;
-    text-align: center;
-    width: 81px;
-    line-height: 30px;
-    color: #fa9b5b;
-    background-color: #fff;
 }
 .center{
     float: left;
@@ -61,6 +50,7 @@ body{
 .panel-import input{
     width: 350px;
     height: 34px;
+    padding-left: 8px;
 }
 .posts-item{}
 .posts-item-body{

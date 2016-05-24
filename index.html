@@ -5,8 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Title Page</title>
-        <link rel="stylesheet" href="/assets/css/index.css">
-        <!-- <link rel="stylesheet" href="/assets/css/ueditor.css"> -->
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <nav>
@@ -108,8 +107,8 @@
             </div>
             <div class="center">
                 <div class="panel-import box">
-                    <input type="url" placeholder="输入要导入的文章URL">
-                    <button class="btn-import">导入</button>
+                    <input id="importUrl" type="url" placeholder="输入要导入的文章URL">
+                    <button id="import" class="btn-primary">导入</button>
                 </div>
                 <div class="panel-posts box">
                     <div class="panel-title">
@@ -261,18 +260,20 @@
                     </div>
                 </div>
             </div>
-            <div class="editor"></div>
+            <div class="editor">
+                <script id="editor" type="text/plain"></script>
+            </div>
         </div>
-        <!-- <script src="/thirdparty/jquery/jquery.min.js"></script>
-        <script type="text/javascript" src="/thirdparty/ueditor/js/ueditor.config.js"></script>
-        <script type="text/javascript" src="/thirdparty/ueditor/js/ueditor.all.min.js"></script>
-        <script type="text/javascript" src="/thirdparty/ueditor/js/zh-cn.js"></script>
-        <script type="text/javascript" src="/assets/js/index.js"></script> -->
+        <script src="thirdparty/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="thirdparty/ueditor/js/ueditor.config.js"></script>
+        <script type="text/javascript" src="thirdparty/ueditor/js/ueditor.all.min.js"></script>
+        <script type="text/javascript" src="thirdparty/ueditor/js/zh-cn.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-            // var ue = UE.getEditor('editor');
-            // index.init({
-            //     editor: ue
-            // });
+            var ue = UE.getEditor('editor');
+            index.init({
+                editor: ue
+            });
         </script>
     </body>
 </html>
