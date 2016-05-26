@@ -1,1 +1,6 @@
 /*可以在这里添加你自己的css*/
+body{
+    padding-bottom: 187px;
+    overflow: auto;
+    /* height: 100%; */
+}

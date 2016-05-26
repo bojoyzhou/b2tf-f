@@ -15,7 +15,7 @@
 }
 .panel-title{
     position: relative;
-    
+
 }
 .panel-title span{
     color: #333;
@@ -46,7 +46,7 @@
 }
 .item-img .close{
     width: 28px;
-    
+
     height: 28px;
     position: absolute;
     /* display: none; */
@@ -57,71 +57,6 @@
     line-height: 28px;
     color: #fff;
     cursor: pointer;
-}
-.mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.mask-panel {
-    width: 800px;
-    height: 600px;
-    background-color: #fff;
-    position: absolute;
-    left: 50%;
-    margin-left: -400px;
-    top: 50%;
-    margin-top: -300px;
-}
-
-.mask-title {
-    height: 44px;
-    line-height: 44px;
-    background-color: #fe9a5f;
-    color: #fff;
-    padding-left: 15px;
-    box-sizing: border-box;
-}
-
-.mask-body {
-    padding: 25px 30px 18px;
-    box-sizing: border-box;
-}
-
-button.btn {
-    padding: 5px 25px;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-}
-
-button.btn.cancel {
-    color: #999;
-    border: #999 solid 1px;
-    background-color: #fff;
-}
-
-button.btn.confirm {
-    color: #fff;
-    background-color: #fe995f;
-    border: #fe995f solid 1px;
-}
-
-.mask-btn {
-    float: right;
-    margin-right: 14px;
-}
-
-.mask-footer {
-    padding: 0 15px;
-}
-
-.mask-info {
-    float: left;
 }
 
 .tabs-content {

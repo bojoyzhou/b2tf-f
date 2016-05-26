@@ -34,6 +34,7 @@ body{
     padding-left: 15px;
     transition: .2s;
     border-bottom: #e7e7e7 dashed 1px;
+    background-color: #fff;
 }
 .panel-import{
     width: 386px;
@@ -44,8 +45,16 @@ body{
     height: 169px;
 }
 .panel-posts{
-    margin-top: 12px;
-    background-color: #fff;
+    box-sizing: border-box;
+    margin-top: -169px;
+    /* background-color: #fff; */
+    width: 386px;
+    padding-top: 250px;
+}
+.panel-posts>div{
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
 }
 .panel-import input{
     width: 350px;
