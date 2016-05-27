@@ -1,42 +1,38 @@
 @import url(./head.css);
 @import url(./ueditor.css);
-body{
-    /*background-image: url(/assets/images/bg.png);*/
-    background-repeat: no-repeat;
-}
-.author{
+.index .author{
     position: absolute;
     left: 0;
 }
-.center{
+.index.center{
     float: left;
     height: 100%;
 }
-.close{
+.index .close{
     position: absolute;
     right: 20px;
     top: 12px;
 }
-.date{
+.index .date{
     margin-left: -48px;
 }
-.link a:focus, .link a:visited{
+.index .link a:focus, .index .link a:visited{
     color: #bfbfbf;
 }
-.link a:active, .link a:hover{
+.index .link a:active, .index .link a:hover{
     color: #666;
 }
-.link{
+.index .link{
     position: absolute;
     right: 24px;
 }
-.list-group-posts{
+.index .list-group-posts{
     padding-left: 15px;
     transition: .2s;
     border-bottom: #e7e7e7 dashed 1px;
     background-color: #fff;
 }
-.panel-import{
+.index .panel-import{
     width: 386px;
     background-color: #fff;
     padding-top: 51px;
@@ -44,28 +40,28 @@ body{
     padding-left: 15px;
     height: 169px;
 }
-.panel-posts{
+.index .panel-posts{
     box-sizing: border-box;
     margin-top: -169px;
     /* background-color: #fff; */
     width: 386px;
-    padding-top: 250px;
+    padding-top: 185px;
 }
-.panel-posts>div{
+.index .panel-posts>div{
   height: 100%;
   width: 100%;
   background-color: #fff;
 }
-.panel-import input{
+.index .panel-import input{
     width: 350px;
     height: 34px;
     padding-left: 8px;
 }
-.posts-item{}
-.posts-item-body{
+.index .posts-item{}
+.index .posts-item-body{
     color: #999;
 }
-.posts-item-foot{
+.index .posts-item-foot{
     margin-top: 24px;
     font-size: 12px;
     position: relative;
@@ -73,12 +69,204 @@ body{
     text-align: center;
     color: #bfbfbf;
 }
-.posts-item-head{
+.index .posts-item-head{
     position: relative;
 }
-.posts-item-title{
+.index .posts-item-title{
     line-height: 46px;
 }
-.list-group-posts:active, .list-group-posts:hover, .list-group-posts.active{
+.index .list-group-posts:active, .index .list-group-posts:hover, .index .list-group-posts.active{
     background-color: #f5f5f5;
+}
+
+.center.common{
+    width: 386px;
+    float: left;
+    height: 100%;
+}
+.common .panel-posts-body {
+    background-color: #fff;
+    /* padding: 55px 15px; */
+}
+.common section.RankEditor {
+    border-bottom: #e6e6e6 solid 1px!important;
+    padding: 10px 15px!important;
+}
+
+.common section.RankEditor:hover {
+    background-color: #f5f5f5;
+}
+
+.images.center{
+    width: 386px;
+    float: left;
+    height: 100%;
+}
+.images .panel-posts{
+    overflow: hidden;
+}
+.images .panel-posts-body {
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+.images .panel-title{
+    position: relative;
+
+}
+.images .panel-title span{
+    color: #333;
+
+    margin-left: 15px;
+}
+.images .panel-title button{
+    position: absolute;
+
+    top: 12px;
+    right: 15px;
+    margin: 0;
+}
+.images .item-img{
+    position: relative;
+    transition: .2s;
+    padding: 10px;
+}
+.images .item-img img{
+    width: 100%;
+
+}
+.images .item-img:hover{
+    background-color: #f5f5f5;
+}
+.images .item-img:hover .close{
+    display:block
+}
+.images .item-img .close{
+    width: 28px;
+
+    height: 28px;
+    position: absolute;
+    /* display: none; */
+    right: 10px;
+    top: 10px;
+    background-color: #333;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.images .tabs-content {
+    border: #fe995f solid 1px;
+    height: 435px;
+    padding: 15px;
+    margin-top: -1px;
+    box-sizing: border-box;
+}
+.images .img_fluid {
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+.add{
+    position: relative;
+}
+.add img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.add input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.images .tabs a {
+    padding: 10px 25px;
+    border: #fff solid 1px;
+    border-bottom: #fe9a5f solid 1px;
+    /* border-left: #fe9a5f solid 1px; */
+    z-index: 3;
+    /* background-color: #fff; */
+    display: block;
+    float: left;
+    /* margin-right: -1px; */
+    color: #999;
+}
+
+.images .tabs a:first-child {
+    margin-left: 0;
+}
+
+.images .tabs a:hover, .images .tabs a.active {
+    border: #fe9a5f solid 1px;
+    border-bottom: #fff solid 1px;
+    /* border-right: #fff solid 1px; */
+}
+.images span.num-pic {
+    color: #fe995f;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.images .mask-info {
+    padding-left: 15px;
+}
+.right-bar {
+    position: fixed;
+    right: 0;
+    top: 60px;
+    width: 275px;
+    background-color: #f2f2f2;
+    height: 100%;
+    padding-left: 15px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    color: #444;
+    border-left: #e6e6e6 solid 1px;
+}
+
+.right-container {
+    height: 100%;
+    width: 100%;
+}
+
+.right-container h4 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    color: #444;
+}
+
+.right-container textarea {
+    resize: none;
+    border: #e6e6e6 solid 1px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.footer a.btn {
+    display: block;
+    width: 96px;
+    line-height: 36px;
+    border: #fe995f solid 2px;
+    border-radius: 10px;
+    text-align: center;
+    /* background-color: #fff; */
+    margin: 0 auto;
+}
+
+.right-container .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+}
+.right-container .img_fluid.add {
+    width: 100px;
+    height: 100px;
 }

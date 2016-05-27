@@ -55,90 +55,58 @@
         <div class="main">
             <div class="left">
                 <ul class="menu">
-                    <li class="menu-item-1">
+                    <li class="menu-item-1 js-btn-import">
                         <a href="">
                             <i class="pre-icon pre-import"></i>
                             导入内容
                         </a>
                     </li>
-                    <li class="menu-item-1">
-                        <a href="common.html">
+                    <li class="menu-item-1 js-btn-common">
+                        <a href="javascript:void(0)">
                             <i class="pre-icon pre-edit"></i>
                             常用
                             <i class="after-icon arrow arrow-up"></i>
                         </a>
                     </li>
                     <ul class="menu-2">
-                        <li class="menu-item-2">
-                            <a href="">标题</a>
+                        <li class="menu-item-2 js-btn-common" data-id="1">
+                            <a href="javascript:;">标题</a>
                         </li>
-                        <li class="menu-item-2">
-                            <a href="">正文</a>
+                        <li class="menu-item-2 js-btn-common" data-id="2">
+                            <a href="javascript:;">正文</a>
                         </li>
-                        <li class="menu-item-2">
-                            <a href="">图文</a>
+                        <li class="menu-item-2 js-btn-common" data-id="3">
+                            <a href="javascript:;">图文</a>
                         </li>
-                        <li class="menu-item-2">
-                            <a href="">关注</a>
+                        <li class="menu-item-2 js-btn-common" data-id="4">
+                            <a href="javascript:;">关注</a>
                         </li>
-                        <li class="menu-item-2">
-                            <a href="">分隔符</a>
+                        <li class="menu-item-2 js-btn-common" data-id="5">
+                            <a href="javascript:;">分隔符</a>
                         </li>
-                        <li class="menu-item-2">
-                            <a href="">插件</a>
+                        <li class="menu-item-2 js-btn-common" data-id="6">
+                            <a href="javascript:;">插件</a>
                         </li>
-                        <li class="menu-item-2">
-                            <a href="">其他</a>
+                        <li class="menu-item-2 js-btn-common" data-id="7">
+                            <a href="javascript:;">其他</a>
                         </li>
                     </ul>
-                    <li class="menu-item-1">
-                        <a href="">
+                    <li class="menu-item-1 js-btn-image">
+                        <a href="javascript:;">
                             <i class="pre-icon pre-img"></i>
                             我的图库
                         </a>
                     </li>
                     <li class="menu-item-1">
-                        <a href="">
+                        <a href="javascript:;">
                             <i class="pre-icon pre-doc"></i>
                             我的内容
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="center">
-                <div class="panel-import box">
-                    <input id="importUrl" type="url" placeholder="输入要导入的文章URL" value="http://news.163.com/16/0524/09/BNQQJG51000156PO.html">
-                    <button id="import" class="btn-primary">导入</button>
-                </div>
-                <div class="panel-posts">
-                    <div class="box">
-                        <div class="panel-title">
-                            备选文章
-                        </div>
-                        <div class="panel-posts-body">
-                            <ul class="js-posts">
-                                <script id="posts-item" type="text/html">
-                                    {{each list as item}}
-                                    <li class="list-group-posts" data-id="{{item.id}}">
-                                        <div class="posts-item">
-                                            <div class="posts-item-head">
-                                                <div class="posts-item-title">{{item.title}}</div>
-                                                <div class="close">&times;</div>
-                                            </div>
-                                            <div class="posts-item-body">{{item.summary}}</div>
-                                            <div class="posts-item-foot">
-                                                <span class="author">{{item.author}}</span>
-                                                <span class="date">{{item.date}}</span>
-                                                <span class="link"><a href="{{item.id}}">查看原文</a></span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    {{/each}}
-                                </script>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="center js-center">
+
             </div>
             <div class="editor">
                 <script id="editor" type="text/plain"></script>
@@ -183,6 +151,120 @@
                 <div class="mask-footer">
                     <button class="btn btn-block">登录</button>
                     <a href="">忘记密码</a>
+                </div>
+            </div>
+        </div>
+
+        <script id="tpl-posts-item" type="text/html">
+            {{each list as item}}
+            <li class="list-group-posts" data-id="{{item.id}}">
+                <div class="posts-item">
+                    <div class="posts-item-head">
+                        <div class="posts-item-title">{{item.title}}</div>
+                        <div class="close">&times;</div>
+                    </div>
+                    <div class="posts-item-body">{{item.summary}}</div>
+                    <div class="posts-item-foot">
+                        <span class="author">{{item.author}}</span>
+                        <span class="date">{{item.date}}</span>
+                        <span class="link"><a href="{{item.id}}">查看原文</a></span>
+                    </div>
+                </div>
+            </li>
+            {{/each}}
+        </script>
+        <script id="tpl-common" type="text/html">
+            <div class="panel-posts box">
+                <div class="panel-title">
+                    常用样式
+                </div>
+                <div class="panel-posts-body js-plugin-body">
+
+                </div>
+            </div>
+        </script>
+        <script id="tpl-import" type="text/html">
+            <div class="panel-import box">
+                    <input id="importUrl" type="url" placeholder="输入要导入的文章URL" value="http://news.163.com/16/0524/09/BNQQJG51000156PO.html">
+                    <button id="import" class="btn-primary">导入</button>
+                </div>
+                <div class="panel-posts">
+                    <div class="box">
+                        <div class="panel-title">
+                            备选文章
+                        </div>
+                        <div class="panel-posts-body">
+                            <ul class="js-posts">
+                                <!-- here is template #posts-item -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </script>
+        <script id="tpl-images" type="text/html">
+            <div class="panel-posts box">
+                <div class="panel-title">
+                    我的图库
+                    <span>0/30</span>
+                    <button class="btn-primary js-img-add">添加图片</button>
+                </div>
+                <div class="panel-posts-body">
+                    <ul>
+                        <li class="item-img">
+                            <img src="/images/img_default.png" alt="">
+                            <a href="#" class="close">&times;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </script>
+        <div class="mask images hide">
+            <div class="mask-panel">
+                <div class="mask-title">
+                    <h4>图片上传</h4>
+                </div>
+                <div class="mask-body">
+                    <div class="tabs clear">
+                        <a class="active" href="#">本地上传</a>
+                        <a href="#">网络图片上传</a>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="img_fluid add"><img src="/images/img_add.png" alt=""><input type="file" name="file" id="img-file"></div>
+                    </div>
+                </div>
+                <div class="mask-footer">
+                    <!-- <div class="mask-info"><span class="num-pic">16</span>张图片已经被选中</div> -->
+                    <div class="mask-btn">
+                        <button class="btn cancel">取消</button>
+                        <button class="btn confirm">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-bar">
+            <div class="right-container">
+                <h4>标题</h4>
+                <div class="group">
+                    <textarea id="doc-title" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <h4>作者</h4>
+                <div class="group">
+                    <textarea id="doc-author" class="author" name="" id="" cols="30" rows="1"></textarea>
+                </div>
+
+                <h4>摘要</h4>
+                <div class="group">
+                    <textarea id="doc-summary" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <h4>封面</h4>
+                <div class="group">
+                    <div class="img_fluid add clear"><img src="/images/img_add.png" alt=""><input type="file" name="file" id="r-img-file"></div>
+                </div>
+                <div class="footer">
+                    <a id="complete" href="javascript:;" class="btn">完成</a>
                 </div>
             </div>
         </div>
