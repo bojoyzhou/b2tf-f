@@ -29,6 +29,8 @@
     color: #666;
     font-size: 14px;
     padding-left: 20px;
+    z-index: 888;
+    position: relative;
 }
 .post-list h4 {
     font-size: 20px;
